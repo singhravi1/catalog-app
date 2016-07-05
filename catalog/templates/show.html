@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>show</title>
+</head>
+<body>
+{% if title == "book" %}
+	<h1>every book info stored:</h1>
+	{%for i in start%}
+		<a href="/showbookorder/{{i}}/">{{i}}</a>
+	{%endfor%}
+
+
+{%else%}
+	<h1>every music info stored:</h1>
+	{%for i in start%}
+		<a href="/showmusicorder/{{i}}/">{{i}}</a>
+	{%endfor%}
+{%endif%}
+
+</body>
+</html>

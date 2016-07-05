@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>add a new music</title>
+</head>
+<body>
+<h1>please give the new music details:</h1>
+<form action="/addmusic/" method="POST">
+	{%csrf_token%}
+	{{form.as_p}}
+	<input type="submit" name="add">
+
+</form>
+</body>
+</html>

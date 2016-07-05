@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ordered</title>
+</head>
+<body>
+{% if title == "book" %}
+	<h1>books in required order:</h1>
+	{% for i in display %}
+		<p>{{i.title}}</p>
+		<p>{{i.author}}</p>
+		<p>{{i.isbn}}</p>
+		<a href="/showbook/">back</a>
+	{% endfor %}
+{%endif%}
+
+{% if title == "music" %}
+	<h1>music in required order:</h1>
+	<p>{{display}}</p>
+	<a href="/showmusic/">back</a>
+{%endif%}
+</body>
+</html>
